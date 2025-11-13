@@ -9,7 +9,7 @@ export default function CleaningWebsite() {
     // </div>
     <div className="h-screen w-full overflow-hidden flex items-center justify-center bg-gray-100">
       <img
-        src="src/assets/maintenance.png"
+        src="/maintenance.png"
         alt="under maintenance"
         className="max-w-full max-h-full object-contain"
       />
