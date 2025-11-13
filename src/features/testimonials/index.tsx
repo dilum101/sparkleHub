@@ -1,9 +1,8 @@
 import { Star } from "lucide-react";
-import React from "react";
 
 type Props = {};
 
-export const Testimonials = (props: Props) => {
+export const Testimonials = ({}: Props) => {
   const testimonials = [
     {
       name: "Sarah Johnson",

@@ -6,7 +6,7 @@ import { ScrollTo } from "../../lib/utils";
 
 type Props = {};
 
-export const NavBar = (props: Props) => {
+export const NavBar = ({}: Props) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (

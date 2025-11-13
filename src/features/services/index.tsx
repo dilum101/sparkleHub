@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 type Props = {};
 
-export const Services = (props: Props) => {
+export const Services = ({}: Props) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 

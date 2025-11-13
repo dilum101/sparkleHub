@@ -2,7 +2,7 @@ import Button from "../../componets/Button";
 
 type Props = {};
 
-export const Hero = (props: Props) => {
+export const Hero = ({}: Props) => {
   return (
     <section
       id="home"

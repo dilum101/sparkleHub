@@ -1,5 +1,3 @@
-import { Sections } from "./lib/constants";
-
 export default function CleaningWebsite() {
   return (
     // <div className="snap snap-mandatory min-h-screen bg-white">

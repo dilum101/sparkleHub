@@ -1,12 +1,9 @@
-import { Phone, Mail, MapPin } from "lucide-react";
-import React, { useState } from "react";
-import Button from "../../componets/Button";
 import { GetInTouch } from "./getInTouch";
 import { RequestQuoteForm } from "./requestQuoteForm";
 
 type Props = {};
 
-export const Contact = (props: Props) => {
+export const Contact = ({}: Props) => {
   return (
     <section
       id="contact"

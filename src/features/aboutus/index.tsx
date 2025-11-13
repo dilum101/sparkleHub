@@ -1,9 +1,9 @@
 import { CheckCircle, Clock, Sparkles, Star } from "lucide-react";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type Props = {};
 
-export const AboutUs = (props: Props) => {
+export const AboutUs = ({}: Props) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -41,7 +41,7 @@ export const AboutUs = (props: Props) => {
             We go above and beyond to exceed your expectations
           </p>
         </div>
-      <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+        <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8 ">
           <div
             className={`bg-white p-6 rounded-xl shadow-md text-center animate-opacity delay-1 ${
               isVisible ? "visible" : ""

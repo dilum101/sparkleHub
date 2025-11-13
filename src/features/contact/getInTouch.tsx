@@ -2,7 +2,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 type Props = {};
 
-export const GetInTouch = (props: Props) => {
+export const GetInTouch = ({}: Props) => {
   return (
     <div>
       <h2 className="text-4xl font-bold mb-6">Get in Touch</h2>

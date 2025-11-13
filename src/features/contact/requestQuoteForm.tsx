@@ -3,7 +3,7 @@ import Button from "../../componets/Button";
 
 type Props = {};
 
-export const RequestQuoteForm = (props: Props) => {
+export const RequestQuoteForm = ({}: Props) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
