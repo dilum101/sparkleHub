@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../../componets/Button";
 
 type Props = {};
@@ -7,13 +6,14 @@ export const Hero = (props: Props) => {
   return (
     <section
       id="home"
-      className="relative pt-24 pb-16 h-screen w-full flex items-center overflow-hidden"
+      className="relative h-[100vh] w-full flex items-center overflow-hidden"
     >
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('src/assets/heronew.png')",
+          height: "calc(100% - 5rem)",
         }}
       />
 
@@ -24,13 +24,23 @@ export const Hero = (props: Props) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            <h1
+              className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-wide "
+              style={{
+                lineHeight: 1.1,
+              }}
+            >
               Professional Cleaning Services You Can Trust
             </h1>
-            <p className="text-lg md:text-2xl text-gray-600 mb-8">
+            <p
+              className="text-lg md:text-xl text-gray-600 mb-8 tracking-wide font-semibold"
+              style={{
+                lineHeight: 1.4,
+              }}
+            >
               Experience spotless spaces with our expert cleaning team.
-              Residential, commercial, and specialized cleaning services
-              tailored to your needs.
+              Commercial, residential and specialized cleaning services tailored
+              to your needs.
             </p>
 
             <div className="flex flex-wrap gap-4">

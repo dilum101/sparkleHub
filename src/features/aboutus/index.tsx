@@ -30,7 +30,7 @@ export const AboutUs = (props: Props) => {
         }}
       />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/60  to-white/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/30  to-transparent" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
@@ -41,7 +41,7 @@ export const AboutUs = (props: Props) => {
             We go above and beyond to exceed your expectations
           </p>
         </div>
-        <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+      <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8 ">
           <div
             className={`bg-white p-6 rounded-xl shadow-md text-center animate-opacity delay-1 ${
               isVisible ? "visible" : ""

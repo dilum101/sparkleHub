@@ -1,30 +1,20 @@
-import { AboutUs } from "./features/aboutus";
-import { Contact } from "./features/contact";
-import { Footer } from "./features/footer";
-import { Hero } from "./features/hero";
-import { Services } from "./features/services";
-import { Testimonials } from "./features/testimonials";
+import { Sections } from "./lib/constants";
 
 export default function CleaningWebsite() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <Hero />
-
-      {/* Services Section */}
-      <Services />
-
-      {/* Why Choose Us */}
-      <AboutUs />
-
-      {/* Testimonials */}
-      <Testimonials />
-
-      {/* Contact Section */}
-      <Contact />
-
-      {/* Footer */}
-      <Footer />
+    // <div className="snap snap-mandatory min-h-screen bg-white">
+    //   {Sections.map(({ id, component: Element }) => (
+    //     <section id={id} key={id} className="w-full h-full snap-start pt-20">
+    //       <Element />
+    //     </section>
+    //   ))}
+    // </div>
+    <div className="h-screen w-full overflow-hidden flex items-center justify-center bg-gray-100">
+      <img
+        src="src/assets/maintenance.png"
+        alt="under maintenance"
+        className="max-w-full max-h-full object-contain"
+      />
     </div>
   );
 }

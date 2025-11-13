@@ -63,12 +63,9 @@
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 1.5;
   color: var(--gray-900);
   background-color: var(--white);
 }
@@ -82,13 +79,6 @@ html {
 ::selection {
   background-color: var(--primary-blue);
   color: var(--white);
-}
-
-/* Link Styles */
-a {
-  text-decoration: none;
-  color: inherit;
-  transition: color var(--transition-fast);
 }
 
 /* Input Styles */
@@ -293,44 +283,6 @@ select:focus {
   transform: translateY(-5px);
 }
 
-/* Button Styles */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  border-radius: var(--radius-lg);
-  transition: all var(--transition-fast);
-  cursor: pointer;
-}
-
-.btn-primary {
-  background-color: var(--primary-blue);
-  color: var(--white);
-}
-
-.btn-primary:hover {
-  background-color: var(--primary-blue-dark);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
-}
-
-.btn-secondary {
-  background-color: var(--white);
-  color: var(--primary-blue);
-  border: 2px solid var(--primary-blue);
-}
-
-.btn-secondary:hover {
-  background-color: var(--secondary-blue);
-}
-
-.btn-large {
-  padding: 1rem 2rem;
-  font-size: 1.125rem;
-}
-
 /* Loading Spinner */
 .spinner {
   width: 40px;
@@ -391,7 +343,6 @@ select:focus {
 .hero-title {
   font-size: 3rem;
   font-weight: 800;
-  line-height: 1.2;
   margin-bottom: 1.5rem;
 }
 
@@ -555,7 +506,7 @@ footer a:hover {
 }
 
 /* Focus Visible for Keyboard Navigation */
-button:focus-visible,
+
 a:focus-visible {
   outline: 2px solid var(--primary-blue);
   outline-offset: 4px;
@@ -783,6 +734,7 @@ a:focus-visible {
 
 .animate-fade-in-side.visible {
   opacity: 1;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   transform: translateX(0);
 }
 
@@ -813,4 +765,25 @@ a:focus-visible {
 }
 .delay-6 {
   transition-delay: 600ms;
+}
+
+.animated_underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.animated_underline::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #4285f4;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+
+.animated_underline:hover::after {
+  width: 100%;
 }

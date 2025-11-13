@@ -65,14 +65,15 @@ export const Services = (props: Props) => {
   }, []);
 
   return (
-    <section id="services" className="py-20" ref={sectionRef}>
+    <section id="services" className="py-20 " ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Our Services
           </h2>
           <p className="text-xl text-gray-600">
-            Comprehensive cleaning solutions for every need
+            From sparkling homes to spotless offices, we deliver exceptional
+            cleaning solutions that save you time and give you peace of mind.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">

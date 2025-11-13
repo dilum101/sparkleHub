@@ -6,6 +6,9 @@ module.exports = {
         sparkleBlue: "#4285F4", // Replace this with your logo’s actual HEX color
         sparkleDark: "#3949AB", // Optional darker shade
       },
+      fontFamily: {
+        heading: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],
