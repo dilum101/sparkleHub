@@ -3,11 +3,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        sparkleBlue: "#4285F4", // Replace this with your logo’s actual HEX color
-        sparkleDark: "#3949AB", // Optional darker shade
+        sparkleBlue: "#00b5be",
+        sparkleNavy: "#1b3a6b",
       },
       fontFamily: {
-        heading: ["Poppins", "sans-serif"],
+        sans: ['"Inter"', "sans-serif"],
+        heading: ['"Poppins"', "sans-serif"],
+      },
+      letterSpacing: {
+        tighter: "-0.03em",
+        tight: "-0.02em",
       },
     },
   },

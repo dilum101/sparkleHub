@@ -1,27 +1,30 @@
+import { useEffect, useRef, useState } from "react";
 import { GetInTouch } from "./getInTouch";
 import { RequestQuoteForm } from "./requestQuoteForm";
 
-type Props = {};
+export const Contact = ({}: {}) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
 
-export const Contact = ({}: Props) => {
+  useEffect(() => {
+    const obs = new IntersectionObserver(
+      ([e]) => { if (e.isIntersecting) { setVisible(true); obs.disconnect(); } },
+      { threshold: 0.1 }
+    );
+    if (ref.current) obs.observe(ref.current);
+    return () => obs.disconnect();
+  }, []);
+
   return (
-    <section
-      id="contact"
-      className="py-20  text-black relative items-center overflow-hidden"
-    >
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat "
-        style={{
-          backgroundImage: "url('src/assets/contactus.png')",
-        }}
-      />
-
-      <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/20  to-transparent" />
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 relative">
-        <div className="grid md:grid-cols-2 gap-12">
-          <GetInTouch />
-          <RequestQuoteForm />
+    <section id="contact" className="py-20 bg-[#f8fafc]" ref={ref}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className={`transition-all duration-700 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
+            <GetInTouch />
+          </div>
+          <div className={`transition-all duration-700 ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`} style={{ transitionDelay: "150ms" }}>
+            <RequestQuoteForm />
+          </div>
         </div>
       </div>
     </section>

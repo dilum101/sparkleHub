@@ -1,100 +1,145 @@
-import { Sparkles } from "lucide-react";
+import { Facebook, Mail, MapPin, Phone } from 'lucide-react';
+import { ScrollTo } from '../../lib/utils';
 
-type Props = {};
+const serviceLinks = [
+  'Regular House Cleaning',
+  'Vacate / End of Lease',
+  'Deep Cleaning',
+  'Move-In Cleaning',
+  'Spring Cleaning',
+  'After Party / Event',
+];
 
-export const Footer = ({}: Props) => {
-  return (
-    <footer className="bg-gray-900 text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8">
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <Sparkles className="w-8 h-8 text-blue-400" />
-              <span className="text-2xl font-bold">Sparkle Clean</span>
-            </div>
-            <p className="text-gray-400">
-              Professional cleaning services for homes and businesses. Making
-              spaces sparkle since 2014.
-            </p>
+const companyLinks = [
+  { label: 'About Us', id: 'about' },
+  { label: 'Our Services', id: 'services' },
+  { label: 'How It Works', id: 'process' },
+  { label: 'Testimonials', id: 'testimonials' },
+  { label: 'FAQ', id: 'faq' },
+  { label: 'Contact', id: 'contact' },
+];
+
+export const Footer = () => (
+  <footer id="footer" className="bg-[#0d1f3c] text-white">
+    {/* Main */}
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        {/* Brand */}
+        <div className="lg:col-span-1">
+          <div className="cursor-pointer mb-5" onClick={() => ScrollTo('hero')}>
+            <img
+              src="src/assets/logo.png"
+              alt="SparkleHub"
+              className="h-14 w-auto object-contain brightness-0 invert"
+            />
           </div>
-          <div>
-            <h3 className="text-lg font-bold mb-4">Services</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>
-                <a href="#services" className="hover:text-white">
-                  Residential Cleaning
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="hover:text-white">
-                  Commercial Cleaning
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="hover:text-white">
-                  Carpet Cleaning
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="hover:text-white">
-                  Window Washing
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-bold mb-4">Company</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>
-                <a href="#about" className="hover:text-white">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="hover:text-white">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#testimonials" className="hover:text-white">
-                  Testimonials
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="hover:text-white">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-bold mb-4">Connect</h3>
-            <p className="text-gray-400 mb-4">
-              Follow us on social media for cleaning tips and special offers!
-            </p>
-            <div className="flex space-x-4">
-              <button className="bg-blue-600 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center transition">
-                <span className="sr-only">Facebook</span>
-                <span className="text-xl">f</span>
-              </button>
-              <button className="bg-blue-600 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center transition">
-                <span className="sr-only">Instagram</span>
-                <span className="text-xl">📷</span>
-              </button>
-              <button className="bg-blue-600 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center transition">
-                <span className="sr-only">Twitter</span>
-                <span className="text-xl">🐦</span>
-              </button>
+          <p className="text-white/75 text-sm leading-relaxed mb-6">
+            Melbourne's trusted residential cleaning specialists. Reliable,
+            affordable and satisfaction guaranteed.
+          </p>
+          <div className="space-y-2">
+            <a
+              href="tel:+61420214143"
+              className="flex items-center gap-2.5 text-sm text-white/80 hover:text-[#00b5be] transition-colors"
+            >
+              <Phone className="w-4 h-4" /> +61 420 214 143
+            </a>
+            <a
+              href="mailto:info@sparklehubcleaning.com.au"
+              className="flex items-center gap-2.5 text-sm text-white/80 hover:text-[#00b5be] transition-colors"
+            >
+              <Mail className="w-4 h-4" /> info@sparklehubcleaning.com.au
+            </a>
+            <div className="flex items-center gap-2.5 text-sm text-white/80">
+              <MapPin className="w-4 h-4" /> Melbourne, VIC
             </div>
           </div>
         </div>
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>
-            &copy; 2024 Sparkle Clean. All rights reserved. | Privacy Policy |
-            Terms of Service
+
+        {/* Services */}
+        <div>
+          <h3 className="font-bold text-sm uppercase tracking-widest text-white/65 mb-5">
+            Services
+          </h3>
+          <ul className="space-y-2.5">
+            {serviceLinks.map((s) => (
+              <li key={s}>
+                <button
+                  onClick={() => ScrollTo('services')}
+                  className="text-sm text-white/80 hover:text-[#00b5be] transition-colors text-left"
+                >
+                  {s}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Company */}
+        <div>
+          <h3 className="font-bold text-sm uppercase tracking-widest text-white/65 mb-5">
+            Company
+          </h3>
+          <ul className="space-y-2.5">
+            {companyLinks.map((c) => (
+              <li key={c.label}>
+                <button
+                  onClick={() => ScrollTo(c.id)}
+                  className="text-sm text-white/80 hover:text-[#00b5be] transition-colors text-left"
+                >
+                  {c.label}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* CTA + Social */}
+        <div>
+          <h3 className="font-bold text-sm uppercase tracking-widest text-white/65 mb-5">
+            Get in Touch
+          </h3>
+          <p className="text-sm text-white/75 mb-5 leading-relaxed">
+            Ready for a spotless home? Get a free, no-obligation quote today.
           </p>
+          <button
+            onClick={() => ScrollTo('contact')}
+            className="btn-primary w-full justify-center mb-6"
+          >
+            Get a Free Quote
+          </button>
+
+          <div className="flex gap-3">
+            <a
+              href="https://www.facebook.com/profile.php?id=61591028807593"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="w-10 h-10 rounded-lg bg-white/10 hover:bg-[#00b5be] flex items-center justify-center text-white/80 hover:text-white transition-all duration-300"
+            >
+              <Facebook className="w-4 h-4" />
+            </a>
+          </div>
         </div>
       </div>
-    </footer>
-  );
-};
+    </div>
+
+    {/* Bottom bar */}
+    <div className="border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p className="text-xs text-white/65">
+          © {new Date().getFullYear()} SparkleHub Professional Cleaning. All
+          rights reserved.
+        </p>
+        <div className="flex gap-5 text-xs text-white/65">
+          <span className="hover:text-white/80 cursor-pointer transition-colors">
+            Privacy Policy
+          </span>
+          <span className="hover:text-white/80 cursor-pointer transition-colors">
+            Terms of Service
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+);
