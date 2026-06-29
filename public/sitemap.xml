@@ -2,8 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.sparklehubcleaning.com.au/</loc>
-    <lastmod>2026-06-29</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/richmond-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/fitzroy-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/brunswick-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/st-kilda-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/south-yarra-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/collingwood-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/carlton-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/prahran-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/hawthorn-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/camberwell-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/glen-waverley-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/box-hill-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/doncaster-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/preston-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/reservoir-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/coburg-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/footscray-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/sunshine-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/toorak-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/northcote-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/frankston-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/dandenong-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/werribee-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sparklehubcleaning.com.au/cleaning/ringwood-melbourne</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

@@ -4,6 +4,7 @@ import { FAQ } from "../features/faq";
 import { Footer } from "../features/footer";
 import { Hero } from "../features/hero";
 import { Portfolio } from "../features/portfolio";
+import { Pricing } from "../features/pricing";
 import { Process } from "../features/process";
 import { Services } from "../features/services";
 import { Stats } from "../features/stats";
@@ -16,6 +17,7 @@ export const Sections: Section[] = [
   { id: "trust",        label: "Trust",        component: Trust,        topBar: false },
   { id: "services",     label: "Services",     component: Services,     topBar: true  },
   { id: "portfolio",    label: "Our Work",     component: Portfolio,    topBar: true  },
+  { id: "pricing",      label: "Pricing",      component: Pricing,      topBar: true  },
   { id: "about",        label: "About Us",     component: AboutUs,      topBar: true  },
   { id: "process",      label: "How It Works", component: Process,      topBar: true  },
   { id: "stats",        label: "Stats",        component: Stats,        topBar: false },

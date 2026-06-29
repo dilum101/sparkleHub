@@ -5,35 +5,47 @@ import { ScrollTo } from "../../lib/utils";
 const faqs = [
   {
     q: "Do you bring your own cleaning supplies and equipment?",
-    a: "Yes, absolutely! We arrive fully equipped with all professional-grade, eco-friendly cleaning products and tools. You don't need to supply anything — just let us in and we take care of the rest.",
+    a: "Yes, absolutely. We arrive fully equipped with all professional-grade, eco-friendly cleaning products and tools. You don't need to supply anything — just let us in and we take care of the rest.",
   },
   {
     q: "Do you offer a bond back guarantee for vacate cleans?",
     a: "Yes. We specialise in end-of-lease cleans designed to meet real estate agent inspection standards. If anything is flagged on the inspection report, we will return within 24 hours to re-clean those specific areas at no extra cost to you.",
   },
   {
-    q: "How do I get a quote and how quickly will I receive it?",
-    a: "Simply fill in our online quote form or give us a call. We'll ask a few quick questions about your property (bedrooms, bathrooms, property size) and provide you with a clear, upfront price — usually within 1–2 hours.",
+    q: "How do I book and how quickly will I get a quote?",
+    a: "Fill in our online quote form or call us directly on +61 420 214 143. We'll ask a few quick questions about your property and provide a clear, upfront price — usually within 1–2 hours. Booking takes just minutes once you're happy with the quote.",
   },
   {
     q: "Are your cleaners police-checked and insured?",
-    a: "Yes. Every SparkleHub cleaner holds a current police check and we carry full public liability insurance. Your home, valuables and peace of mind are always protected.",
+    a: "Yes. Every SparkleHub cleaner holds a current police check and we carry $5M public liability insurance plus WorkCover. Your home, valuables and peace of mind are always protected.",
   },
   {
     q: "Can I book a same-day or last-minute clean?",
-    a: "We do our best to accommodate short-notice and same-day bookings subject to availability. Give us a call as early as possible and we'll confirm the earliest slot we can offer.",
+    a: "We do our best to accommodate short-notice and same-day bookings subject to availability. Call us as early as possible on +61 420 214 143 and we'll confirm the earliest slot we can offer.",
   },
   {
-    q: "What areas in Melbourne do you service?",
-    a: "We service Melbourne CBD and all surrounding suburbs. Contact us with your postcode and we'll quickly confirm whether we cover your area — most Melbourne metro areas are included.",
+    q: "Which Melbourne suburbs do you service?",
+    a: "We cover all Melbourne metro suburbs including the CBD, inner suburbs (Richmond, Fitzroy, Brunswick, Collingwood, St Kilda, South Yarra), eastern suburbs (Box Hill, Glen Waverley, Doncaster), northern suburbs (Preston, Reservoir, Coburg), western suburbs (Footscray, Sunshine, Werribee) and the Mornington Peninsula. Contact us with your postcode to confirm.",
   },
   {
     q: "What is your cancellation or rescheduling policy?",
-    a: "We understand life happens. We ask for at least 24 hours notice for cancellations or rescheduling where possible. Please contact us as soon as you know and we'll do our best to accommodate you.",
+    a: "We ask for at least 24 hours notice for cancellations or rescheduling. Contact us as soon as you know and we'll do our best to accommodate you. We understand life happens — we're flexible and easy to deal with.",
   },
   {
     q: "Do I need to be home during the clean?",
-    a: "No, you don't need to be home. Many of our clients provide us with a key or door code. Your home is in safe hands with our fully vetted, insured team.",
+    a: "No — many of our clients provide a key or door code. Your home is in safe hands with our fully vetted, insured team. We'll send you a message when we arrive and when we've finished.",
+  },
+  {
+    q: "What exactly is included in a vacate/end-of-lease clean?",
+    a: "Our vacate clean covers every room thoroughly including oven, stove, rangehood and fridge interior, all bathroom fixtures, window tracks and sills, skirting boards, wardrobes, garage and balcony. We follow the standard real estate inspection checklist to maximise your bond return.",
+  },
+  {
+    q: "How is the final price calculated?",
+    a: "Pricing is based on the number of bedrooms and bathrooms, the size of the property and its current condition. We provide a firm, upfront quote before starting — no hidden fees, no surprises. What we quote is exactly what you pay.",
+  },
+  {
+    q: "Do you offer regular cleaning schedules?",
+    a: "Yes. We offer weekly, fortnightly and monthly recurring cleans at preferential rates. Many clients love coming home to a fresh house on a schedule that suits them. Ask us about setting up a regular booking.",
   },
 ];
 

@@ -102,14 +102,6 @@ export const NavBar = ({}: {}) => {
 
           {/* Right side */}
           <div className="hidden md:flex items-center gap-3 flex-shrink-0">
-            <a
-              href="tel:+61420214143"
-              className={`flex items-center gap-1.5 text-sm font-medium transition-colors duration-300 ${
-                scrolled ? "text-white/70 hover:text-white" : "text-gray-500 hover:text-[#1b3a6b]"
-              }`}
-            >
-              <Phone className="w-3.5 h-3.5" /> +61 420 214 143
-            </a>
             <button
               onClick={() => ScrollTo("contact")}
               className={`relative overflow-hidden text-sm font-bold px-5 py-2.5 rounded-full transition-all duration-300 group ${
