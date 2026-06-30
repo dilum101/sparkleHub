@@ -1,5 +1,6 @@
 import { CheckCircle } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import aboutImg from "../../assets/aboutus.png";
 import { ScrollTo } from "../../lib/utils";
 
 const points = [
@@ -37,7 +38,7 @@ export const AboutUs = ({}: {}) => {
           <div className={`transition-all duration-700 ${vis ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"}`}>
             <div className="relative">
               <img
-                src="src/assets/aboutus.png"
+                src={aboutImg}
                 alt="SparkleHub professional cleaners at work in Melbourne home"
                 loading="lazy"
                 decoding="async"

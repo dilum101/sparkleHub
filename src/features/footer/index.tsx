@@ -1,5 +1,6 @@
 import { Facebook, Mail, MapPin, Phone, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logoImg from '../../assets/logo.png';
 import { SUBURBS } from '../../lib/suburbs';
 import { ScrollTo } from '../../lib/utils';
 
@@ -129,7 +130,7 @@ export const Footer = () => (
         <div className="lg:col-span-4">
           <div className="cursor-pointer mb-5" onClick={() => ScrollTo('hero')}>
             <img
-              src="src/assets/logo.png"
+              src={logoImg}
               alt="SparkleHub"
               className="h-10 w-auto object-contain brightness-0 invert max-w-[160px]"
             />

@@ -7,6 +7,7 @@ import {
   ThumbsUp,
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import heroImg from '../../assets/heronew.png';
 import { ScrollTo } from '../../lib/utils';
 
 const SERVICE_MAP: Record<string, string> = {
@@ -64,7 +65,7 @@ export const Hero = ({}: {}) => {
       <div
         className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
-          backgroundImage: "url('src/assets/heronew.png')",
+          backgroundImage: `url('${heroImg}')`,
           backgroundPosition: '72% 20%',
         }}
       />
