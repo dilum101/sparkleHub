@@ -51,8 +51,6 @@ export const SuburbPage = () => {
     );
   }
 
-  const title = `Residential Cleaning ${suburb.name} Melbourne`;
-
   return (
     <>
       {/* SEO meta via document */}
@@ -357,6 +355,11 @@ function MetaTags({
     setMeta('og:title', title, true);
     setMeta('og:description', desc, true);
     setMeta('og:url', canonical, true);
+    setMeta(
+      'og:image',
+      'https://www.sparklehubcleaning.com.au/og-image.jpg',
+      true,
+    );
 
     let link = document.querySelector(
       'link[rel="canonical"]',
@@ -368,8 +371,71 @@ function MetaTags({
     }
     link.href = canonical;
 
+    // JSON-LD for this suburb page
+    const jsonld = {
+      '@context': 'https://schema.org',
+      '@type': 'LocalBusiness',
+      name: `SparkleHub Cleaning Services — ${suburb}`,
+      description: desc,
+      url: canonical,
+      telephone: '+61420214143',
+      email: 'info@sparklehubcleaning.com.au',
+      image: 'https://www.sparklehubcleaning.com.au/og-image.jpg',
+      areaServed: {
+        '@type': 'Place',
+        name: `${suburb}, Melbourne, VIC, Australia`,
+      },
+      priceRange: '$$',
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: `Cleaning Services in ${suburb}`,
+        itemListElement: [
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: `House Cleaning ${suburb}`,
+            },
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: `Vacate Cleaning ${suburb}`,
+            },
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: `End of Lease Cleaning ${suburb}`,
+            },
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: `Deep Cleaning ${suburb}`,
+            },
+          },
+        ],
+      },
+      sameAs: ['https://www.facebook.com/profile.php?id=61591028807593'],
+    };
+    let script = document.querySelector(
+      'script[data-suburb-ld]',
+    ) as HTMLScriptElement | null;
+    if (!script) {
+      script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.setAttribute('data-suburb-ld', '1');
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(jsonld);
+
     return () => {
       document.title = 'SparkleHub | Professional House Cleaning Melbourne';
+      document.querySelector('script[data-suburb-ld]')?.remove();
     };
   }, [suburb, slug, blurb]);
 

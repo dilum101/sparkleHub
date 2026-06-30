@@ -10,12 +10,12 @@ import {
 } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 
-import imgAfterParty from '../../assets/services/afterpartyclean.png';
-import imgDeep from '../../assets/services/deepclean.png';
-import imgMovein from '../../assets/services/movein.png';
-import imgRegular from '../../assets/services/regualrHouseClean.png';
-import imgSpring from '../../assets/services/springclean.png';
-import imgVacate from '../../assets/services/vacate-endoflease.png';
+import imgAfterParty from '../../assets/services/opt/afterpartyclean.jpg';
+import imgDeep from '../../assets/services/opt/deepclean.jpg';
+import imgMovein from '../../assets/services/opt/movein.jpg';
+import imgRegular from '../../assets/services/opt/regualrHouseClean.jpg';
+import imgSpring from '../../assets/services/opt/springclean.jpg';
+import imgVacate from '../../assets/services/opt/vacate-endoflease.jpg';
 import { ScrollTo } from '../../lib/utils';
 
 const featured = [
@@ -154,7 +154,7 @@ export const Services = () => {
           {featured.map((s, i) => (
             <div
               key={i}
-              className={`group relative rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 flex flex-col isolate ${feat.vis ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+              className={`group relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 flex flex-col isolate [transform:translateZ(0)] [backface-visibility:hidden] ${feat.vis ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
               style={{
                 transitionDelay: `${i * 150}ms`,
                 transitionDuration: '600ms',
@@ -243,7 +243,7 @@ export const Services = () => {
           {others.map((s, i) => (
             <div
               key={i}
-              className={`group relative rounded-2xl border border-gray-100 bg-white hover:shadow-xl transition-all duration-400 hover:-translate-y-1.5 flex flex-col isolate ${grid.vis ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+              className={`group relative rounded-2xl overflow-hidden border border-gray-100 bg-white hover:shadow-xl transition-all duration-400 hover:-translate-y-1.5 flex flex-col isolate [transform:translateZ(0)] [backface-visibility:hidden] ${grid.vis ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
               style={{
                 transitionDelay: `${i * 100}ms`,
                 transitionDuration: '600ms',

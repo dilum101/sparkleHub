@@ -356,6 +356,11 @@ export const Footer = () => (
           </span>
         </div>
       </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-5">
+        <p className="text-[11px] text-white/20 text-center">
+          SparkleHub is a cleaning services company. We do not hold a Labour Hire Licence and do not provide labour hire services.
+        </p>
+      </div>
     </div>
   </footer>
 );

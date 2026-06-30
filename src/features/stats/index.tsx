@@ -17,10 +17,10 @@ function useCountUp(target: number, duration = 1800, start = false) {
 }
 
 const stats = [
-  { value: 500, suffix: "+", label: "Happy Clients",         sub: "Across Melbourne" },
-  { value: 100, suffix: "%", label: "Satisfaction Rate",     sub: "We make it right, every time" },
-  { value: 100, suffix: "%", label: "Bond Return Rate",      sub: "On all vacate cleans" },
-  { value: -1,  suffix: "",  label: "Hidden Fees",           sub: "Clear upfront pricing" },
+  { value: -1,  suffix: "",  display: "Proudly",  label: "Melbourne Local",      sub: "Serving all Melbourne suburbs" },
+  { value: 100, suffix: "%", display: null,        label: "Satisfaction Rate",    sub: "We make it right, every time" },
+  { value: 100, suffix: "%", display: null,        label: "Bond Return Rate",     sub: "On all vacate cleans" },
+  { value: -1,  suffix: "",  display: "$0",        label: "Hidden Fees",          sub: "Clear upfront pricing" },
 ];
 
 
@@ -62,7 +62,7 @@ export const Stats = ({}: {}) => {
                       </>
                     )}
                     <div className="text-4xl md:text-5xl font-extrabold text-white tracking-tight relative">
-                      {s.value === -1 ? "$0" : `${count}${s.suffix}`}
+                      {s.display !== null && s.value === -1 ? s.display : s.value === -1 ? "$0" : `${count}${s.suffix}`}
                     </div>
                   </div>
                   <div className="text-white font-bold text-sm md:text-base mb-0.5">{s.label}</div>
