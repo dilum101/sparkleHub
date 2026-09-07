@@ -4,12 +4,12 @@ export const GetInTouch = () => (
   <div>
     <div className="section-badge mb-5">Contact Us</div>
     <h2 className="section-title mb-4">
-      Let's Get Your Home
+      Let's Bring Your Home
       <br />
-      <span className="text-[#00b5be]">Sparkling Clean</span>
+      <span className="text-[#00b5be]">to the Prime Standard</span>
     </h2>
     <p className="text-gray-500 leading-relaxed mb-8">
-      Ready to experience the SparkleHub difference? Fill in the form on the
+      Ready to experience the PRIMEORA difference? Fill in the form on the
       right and we'll send you a clear, upfront quote within a few hours — no
       obligation, no hidden fees.
     </p>
@@ -26,8 +26,8 @@ export const GetInTouch = () => (
         {
           icon: <Mail className="w-5 h-5" />,
           label: 'Email',
-          value: 'info@sparklehubcleaning.com.au',
-          href: 'mailto:info@sparklehubcleaning.com.au',
+          value: 'info@primeora.com.au',
+          href: 'mailto:info@primeora.com.au',
         },
         {
           icon: <MapPin className="w-5 h-5" />,

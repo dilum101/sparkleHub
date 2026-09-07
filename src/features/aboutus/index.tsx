@@ -39,7 +39,7 @@ export const AboutUs = ({}: {}) => {
             <div className="relative">
               <img
                 src={aboutImg}
-                alt="SparkleHub professional cleaners at work in Melbourne home"
+                alt="PRIMEORA professional cleaners at work in Melbourne home"
                 loading="lazy"
                 decoding="async"
                 className="w-full h-[480px] object-cover rounded-2xl shadow-xl"
@@ -63,16 +63,17 @@ export const AboutUs = ({}: {}) => {
             className={`mt-8 lg:mt-0 transition-all duration-700 ${vis ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"}`}
             style={{ transitionDelay: "200ms" }}
           >
-            <div className="section-badge mb-5">About SparkleHub</div>
+            <div className="section-badge mb-5">About PRIMEORA</div>
             <h2 className="section-title mb-5">
-              Melbourne's Newest<br />
-              <span className="text-[#00b5be]">Home Cleaning Specialists</span>
+              Melbourne's Home Cleaning<br />
+              <span className="text-[#00b5be]">— The Prime Standard</span>
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              SparkleHub is a family-owned professional cleaning business proudly
+              PRIMEORA is a family-owned professional cleaning business proudly
               serving Melbourne and its surrounding suburbs. We launched with one
-              clear mission — to deliver genuinely high-quality cleaning at a fair
-              price, with staff you can actually trust in your home.
+              clear mission — to set the prime standard in residential cleaning:
+              genuinely high-quality results, fair pricing, and staff you can
+              actually trust in your home.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
               Every member of our team is carefully vetted, background-checked and
@@ -80,9 +81,9 @@ export const AboutUs = ({}: {}) => {
               cleaning products that are safe for children, pets and the environment.
             </p>
             <p className="text-gray-600 leading-relaxed mb-7">
-              We specialise in residential cleaning, vacate & end-of-lease cleaning,
+              We specialise in residential cleaning, vacate &amp; end-of-lease cleaning,
               and deep cleans. Being new to the industry means we work harder to
-              impress — every job gets our absolute best effort, guaranteed.
+              impress — every job gets our absolute best effort. That is what the prime standard means to us.
             </p>
 
             <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-3 mb-8">

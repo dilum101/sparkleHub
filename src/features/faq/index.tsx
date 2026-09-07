@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "Are your cleaners police-checked and insured?",
-    a: "Yes. Every SparkleHub cleaner holds a current police check and we carry $5M public liability insurance plus WorkCover. Your home, valuables and peace of mind are always protected.",
+    a: "Yes. Every PRIMEORA cleaner holds a current police check and we carry $5M public liability insurance plus WorkCover. Your home, valuables and peace of mind are always protected.",
   },
   {
     q: "Can I book a same-day or last-minute clean?",

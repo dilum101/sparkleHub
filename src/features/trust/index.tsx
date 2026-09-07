@@ -99,7 +99,7 @@ export const Trust = ({}: {}) => {
           className={`text-center mb-16 transition-all duration-700 ${headVis ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
         >
           <div className="inline-flex items-center gap-2 bg-[#00b5be]/10 border border-[#00b5be]/25 text-[#00b5be] text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-5">
-            <Star className="w-3.5 h-3.5 fill-current" /> Why SparkleHub
+            <Star className="w-3.5 h-3.5 fill-current" /> Why PRIMEORA
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#1b3a6b] mb-4 leading-tight">
             Six reasons Melbourne families{" "}
@@ -175,7 +175,7 @@ export const Trust = ({}: {}) => {
           }}
         >
           <div>
-            <p className="text-white font-bold text-xl mb-1">Ready to experience the SparkleHub difference?</p>
+            <p className="text-white font-bold text-xl mb-1">Ready to experience the PRIMEORA difference?</p>
             <p className="text-white/80 text-sm">Join Melbourne families who trust us with their homes every week.</p>
           </div>
           <button

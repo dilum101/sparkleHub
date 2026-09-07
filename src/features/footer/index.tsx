@@ -97,13 +97,14 @@ export const Footer = () => (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 flex flex-col lg:flex-row items-center justify-between gap-8">
         <div className="text-center lg:text-left">
           <div className="inline-flex items-center gap-2 bg-[#00b5be]/15 border border-[#00b5be]/25 text-[#00b5be] text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-4">
-            <Sparkles className="w-3 h-3" /> Melbourne's Cleaning Specialists
+            <Sparkles className="w-3 h-3" /> The Prime Standard in Melbourne
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-2 leading-tight">
-            Ready for a spotless home?
+            Ready for a home at the prime standard?
           </h2>
           <p className="text-white/50 text-base max-w-lg">
-            Join hundreds of Melbourne families who trust SparkleHub every week
+            Join Melbourne families who trust PRIMEORA to deliver the prime
+            standard, every time
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
@@ -131,13 +132,13 @@ export const Footer = () => (
           <div className="cursor-pointer mb-5" onClick={() => ScrollTo('hero')}>
             <img
               src={logoImg}
-              alt="SparkleHub"
-              className="h-10 w-auto object-contain brightness-0 invert max-w-[160px]"
+              alt="PRIMEORA"
+              className="h-20 w-auto object-contain max-w-[160px]"
             />
           </div>
           <p className="text-white/50 text-sm leading-relaxed mb-7 max-w-xs">
-            Melbourne's trusted residential cleaning specialists. Reliable,
-            insured, eco-friendly, and satisfaction guaranteed.
+            Melbourne's home cleaning specialists — setting the prime standard
+            in reliability, care, and quality every single visit.
           </p>
 
           {/* Contact pills */}
@@ -161,7 +162,7 @@ export const Footer = () => (
               </span>
             </a>
             <a
-              href="mailto:info@sparklehubcleaning.com.au"
+              href="mailto:info@primeora.com.au"
               className="flex items-center gap-3 group"
             >
               <span
@@ -175,7 +176,7 @@ export const Footer = () => (
                 <Mail className="w-3.5 h-3.5 text-[#00b5be]" />
               </span>
               <span className="text-sm text-white/60 group-hover:text-white transition-colors">
-                info@sparklehubcleaning.com.au
+                info@primeora.com.au
               </span>
             </a>
             <div className="flex items-center gap-3">
@@ -198,7 +199,7 @@ export const Footer = () => (
           {/* Social */}
           <div className="mt-7">
             <a
-              href="https://www.facebook.com/profile.php?id=61591028807593"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -345,8 +346,8 @@ export const Footer = () => (
     <div className="border-t border-white/[0.05]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
         <p className="text-xs text-white/25">
-          © {new Date().getFullYear()} SparkleHub Professional Cleaning. All
-          rights reserved.
+          © {new Date().getFullYear()} PRIMEORA — The Prime Standard. All rights
+          reserved.
         </p>
         <div className="flex gap-6 text-xs text-white/25">
           <span className="hover:text-white/50 cursor-pointer transition-colors">
@@ -359,7 +360,8 @@ export const Footer = () => (
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-5">
         <p className="text-[11px] text-white/20 text-center">
-          SparkleHub is a cleaning services company. We do not hold a Labour Hire Licence and do not provide labour hire services.
+          PRIMEORA is a cleaning services company. We do not hold a Labour Hire
+          Licence and do not provide labour hire services.
         </p>
       </div>
     </div>

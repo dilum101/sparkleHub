@@ -91,7 +91,7 @@ export const SuburbPage = () => {
               to="/"
               className="inline-flex items-center gap-2 text-white/60 hover:text-white text-sm mb-8 transition-colors"
             >
-              <ArrowLeft className="w-4 h-4" /> Back to SparkleHub
+              <ArrowLeft className="w-4 h-4" /> Back to PRIMEORA
             </Link>
 
             <div className="inline-flex items-center gap-2 bg-[#00b5be]/20 border border-[#00b5be]/30 text-[#00b5be] text-xs font-bold ml-2 px-4 py-1.5 rounded-full uppercase tracking-widest mb-5">
@@ -160,11 +160,11 @@ export const SuburbPage = () => {
               {/* Why us */}
               <div>
                 <h2 className="text-2xl font-extrabold text-[#1b3a6b] mb-2">
-                  Why {suburb.name} Residents Choose SparkleHub
+                  Why {suburb.name} Residents Choose PRIMEORA
                 </h2>
                 <p className="text-gray-500 mb-6">
                   We're not just another cleaning company. Here's what sets
-                  SparkleHub apart for {suburb.name} homeowners and renters.
+                  PRIMEORA apart for {suburb.name} homeowners and renters.
                 </p>
                 <ul className="space-y-3">
                   {whyUs.map((w) => (
@@ -332,9 +332,9 @@ function MetaTags({
   blurb: string;
 }) {
   useEffect(() => {
-    const title = `House Cleaning ${suburb} Melbourne | SparkleHub`;
-    const desc = `${blurb} Professional, insured and eco-friendly cleaning in ${suburb}. Bond back guarantee. Call SparkleHub today.`;
-    const canonical = `https://www.sparklehubcleaning.com.au/cleaning/${slug}-melbourne`;
+    const title = `House Cleaning ${suburb} Melbourne | PRIMEORA`;
+    const desc = `${blurb} Professional, insured and eco-friendly cleaning in ${suburb}. Bond back guarantee. Call PRIMEORA today.`;
+    const canonical = `https://primeora.com.au/cleaning/${slug}-melbourne`;
 
     document.title = title;
 
@@ -357,7 +357,7 @@ function MetaTags({
     setMeta('og:url', canonical, true);
     setMeta(
       'og:image',
-      'https://www.sparklehubcleaning.com.au/og-image.jpg',
+      'https://primeora.com.au/og-image.jpg',
       true,
     );
 
@@ -375,12 +375,12 @@ function MetaTags({
     const jsonld = {
       '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
-      name: `SparkleHub Cleaning Services — ${suburb}`,
+      name: `PRIMEORA Cleaning Services — ${suburb}`,
       description: desc,
       url: canonical,
       telephone: '+61420214143',
-      email: 'info@sparklehubcleaning.com.au',
-      image: 'https://www.sparklehubcleaning.com.au/og-image.jpg',
+      email: 'info@primeora.com.au',
+      image: 'https://primeora.com.au/og-image.jpg',
       areaServed: {
         '@type': 'Place',
         name: `${suburb}, Melbourne, VIC, Australia`,
@@ -434,7 +434,7 @@ function MetaTags({
     script.textContent = JSON.stringify(jsonld);
 
     return () => {
-      document.title = 'SparkleHub | Professional House Cleaning Melbourne';
+      document.title = 'PRIMEORA | Professional House Cleaning Melbourne';
       document.querySelector('script[data-suburb-ld]')?.remove();
     };
   }, [suburb, slug, blurb]);

@@ -70,21 +70,35 @@ export const RequestQuoteForm = ({}: {}) => {
     setStatus("sending");
     setSendErr("");
 
+    const payload = {
+      from_name:      form.name,
+      from_email:     form.email,
+      phone:          form.phone,
+      service_type:   SERVICE_LABELS[form.service] ?? form.service,
+      suburb:         form.suburb,
+      preferred_date: form.date || "Flexible",
+      message:        form.message,
+    };
+
     try {
+      // Send notification to PRIMEORA
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        {
-          from_name:      form.name,
-          from_email:     form.email,
-          phone:          form.phone,
-          service_type:   SERVICE_LABELS[form.service] ?? form.service,
-          suburb:         form.suburb,
-          preferred_date: form.date || "Flexible",
-          message:        form.message,
-        },
+        payload,
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       );
+
+      // Send auto-reply to customer (fire and forget — don't block success on this)
+      const autoReplyId = import.meta.env.VITE_EMAILJS_AUTOREPLY_TEMPLATE_ID;
+      console.log("Auto-reply template ID:", autoReplyId);
+      emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        autoReplyId,
+        payload,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      ).catch((err) => console.warn("Auto-reply failed:", err));
+
       setStatus("success");
     } catch (err: unknown) {
       console.error("EmailJS error:", err);

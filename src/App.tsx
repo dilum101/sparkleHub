@@ -99,7 +99,7 @@ const HomePage = () => (
     <Suspense fallback={<CTASkeleton />}>
       <CTAStrip
         heading="Loved what you see?"
-        sub="Join hundreds of Melbourne families who trust SparkleHub every week"
+        sub="Join Melbourne families who trust PRIMEORA to deliver the prime standard, every time"
         dark
       />
     </Suspense>

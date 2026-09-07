@@ -5,7 +5,7 @@ import { ScrollTo } from "../../lib/utils";
 const testimonials = [
   {
     name: "Sarah M.", location: "Fitzroy, VIC", rating: 5,
-    text: "SparkleHub did our end-of-lease clean and we got our full bond back without any issues. The property looked better than when we first moved in! The team was punctual, thorough and very professional. I was honestly blown away by how meticulous they were — every corner, every surface, even the inside of the oven. Highly recommend to anyone moving out.",
+    text: "PRIMEORA did our end-of-lease clean and we got our full bond back without any issues. The property looked better than when we first moved in! The team was punctual, thorough and very professional. I was honestly blown away by how meticulous they were — every corner, every surface, even the inside of the oven. Highly recommend to anyone moving out.",
     highlight: "Got full bond back with zero issues",
     loved: ["On time and professional", "Oven & appliances spotless", "Real estate agent impressed", "Full bond returned"],
     service: "Vacate Cleaning", initials: "SM", propertyType: "2-bedroom apartment",
@@ -26,14 +26,14 @@ const testimonials = [
   },
   {
     name: "David & Lisa W.", location: "Collingwood, VIC", rating: 5,
-    text: "We manage a few rental properties and use SparkleHub between every tenancy. They are consistently reliable, affordable and the properties always come up absolutely immaculate. The real estate agents are always impressed by the standard of cleanliness. Turnaround time is fast which is crucial for us, and the team always communicates well. We wouldn't use anyone else.",
+    text: "We manage a few rental properties and use PRIMEORA between every tenancy. They are consistently reliable, affordable and the properties always come up absolutely immaculate. The real estate agents are always impressed by the standard of cleanliness. Turnaround time is fast which is crucial for us, and the team always communicates well. We wouldn't use anyone else.",
     highlight: "Our go-to between every tenancy",
     loved: ["Fast turnaround time", "Great communication", "Real estate approved standard", "Consistent quality every time"],
     service: "Vacate Cleaning", initials: "DW", propertyType: "Multiple rental properties",
   },
   {
     name: "Priya K.", location: "St Kilda, VIC", rating: 5,
-    text: "I called SparkleHub for a last-minute clean before family arrived and was amazed they could fit me in the same day. The team arrived right on time, were incredibly thorough and left every room spotless in just a few hours. I was almost embarrassed by how much better the house looked! Flexible, professional, great value — I've already booked them again for a regular clean.",
+    text: "I called PRIMEORA for a last-minute clean before family arrived and was amazed they could fit me in the same day. The team arrived right on time, were incredibly thorough and left every room spotless in just a few hours. I was almost embarrassed by how much better the house looked! Flexible, professional, great value — I've already booked them again for a regular clean.",
     highlight: "Same-day booking, amazing result",
     loved: ["Same-day availability", "Arrived right on time", "Every room spotless", "Already rebooked"],
     service: "House Cleaning", initials: "PK", propertyType: "3-bedroom house",

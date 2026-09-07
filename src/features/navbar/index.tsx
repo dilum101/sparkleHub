@@ -86,8 +86,8 @@ export const NavBar = () => {
             >
               <img
                 src={logoImg}
-                alt="SparkleHub"
-                className="h-12 w-auto object-contain"
+                alt="PRIMEORA"
+                className="h-12 w-auto object-contain scale-150"
               />
             </div>
 
