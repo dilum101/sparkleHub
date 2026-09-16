@@ -143,9 +143,9 @@ export const Hero = ({}: {}) => {
               className={`text-lg md:text-xl text-white/75 leading-relaxed mb-8 max-w-xl transition-all duration-700 ${vis ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
               style={{ transitionDelay: '220ms' }}
             >
-              PRIMEORA delivers professional house cleaning, vacate cleaning
-              and deep cleaning across Melbourne — reliable, thorough and
-              always to the prime standard.
+              PRIMEORA specialises in regular house cleaning for Melbourne CBD,
+              Altona and South East suburbs — helping busy families keep
+              homes fresh, spotless and stress-free every week.
             </p>
 
             {/* Trust badges */}

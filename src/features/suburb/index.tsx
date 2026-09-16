@@ -357,7 +357,7 @@ function MetaTags({
     setMeta('og:url', canonical, true);
     setMeta(
       'og:image',
-      'https://primeora.com.au/og-image.jpg',
+      'https://primeora.com.au/og-image.jpg?v=20260915',
       true,
     );
 
@@ -380,7 +380,7 @@ function MetaTags({
       url: canonical,
       telephone: '+61420214143',
       email: 'info@primeora.com.au',
-      image: 'https://primeora.com.au/og-image.jpg',
+      image: 'https://primeora.com.au/og-image.jpg?v=20260915',
       areaServed: {
         '@type': 'Place',
         name: `${suburb}, Melbourne, VIC, Australia`,
@@ -420,7 +420,7 @@ function MetaTags({
           },
         ],
       },
-      sameAs: ['https://www.facebook.com/profile.php?id=61591028807593'],
+      sameAs: ['https://www.facebook.com/profile.php?id=61594315407894'],
     };
     let script = document.querySelector(
       'script[data-suburb-ld]',

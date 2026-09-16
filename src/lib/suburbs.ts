@@ -8,6 +8,55 @@ export interface SuburbData {
 
 export const SUBURBS: SuburbData[] = [
   {
+    slug: "melbourne-cbd",
+    name: "Melbourne CBD",
+    region: "City",
+    nearby: ["Southbank", "Docklands", "Carlton", "Richmond"],
+    blurb: "PRIMEORA provides regular house cleaning across Melbourne CBD and the surrounding inner-city suburbs, with flexible service for busy homes and apartments.",
+  },
+  {
+    slug: "altona",
+    name: "Altona",
+    region: "West",
+    nearby: ["Williamstown", "Hoppers Crossing", "Sunshine", "Point Cook"],
+    blurb: "From family homes to bayside apartments, PRIMEORA delivers reliable regular house cleaning in Altona and surrounding western suburbs, including Williamstown and Hoppers Crossing.",
+  },
+  {
+    slug: "clayton",
+    name: "Clayton",
+    region: "South East",
+    nearby: ["Springvale", "Dandenong", "Glen Waverley", "Mulgrave"],
+    blurb: "Clayton homeowners and renters trust PRIMEORA for regular house cleaning, deep cleans and move-in refreshes across Clayton and South East Melbourne.",
+  },
+  {
+    slug: "keysborough",
+    name: "Keysborough",
+    region: "South East",
+    nearby: ["Noble Park", "Springvale", "Dandenong", "Clayton"],
+    blurb: "PRIMEORA offers dependable weekly and fortnightly house cleaning in Keysborough and surrounding South East suburbs, with flexible regular maintenance for busy families.",
+  },
+  {
+    slug: "narre-warren",
+    name: "Narre Warren",
+    region: "South East",
+    nearby: ["Berwick", "Cranbourne", "Hallam", "Dandenong"],
+    blurb: "For busy households in Narre Warren and nearby South East suburbs, PRIMEORA delivers consistent regular house cleaning that keeps homes fresh, tidy and guest-ready.",
+  },
+  {
+    slug: "rowville",
+    name: "Rowville",
+    region: "South East",
+    nearby: ["Lysterfield", "Wantirna", "Knoxfield", "Dandenong"],
+    blurb: "Rowville families benefit from PRIMEORA's regular house cleaning service, tailored for larger homes and busy schedules across South East Melbourne.",
+  },
+  {
+    slug: "cranbourne",
+    name: "Cranbourne",
+    region: "South East",
+    nearby: ["Narre Warren", "Berwick", "Hallam", "Frankston"],
+    blurb: "PRIMEORA brings reliable, high-quality regular house cleaning to Cranbourne homes and surrounding South East suburbs, ideal for weekly, fortnightly and seasonal service plans.",
+  },
+  {
     slug: "richmond",
     name: "Richmond",
     region: "Inner East",

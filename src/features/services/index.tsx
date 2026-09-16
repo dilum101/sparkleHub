@@ -144,8 +144,9 @@ export const Services = () => {
           <div className="section-badge mb-4">What We Offer</div>
           <h2 className="section-title mb-4">Residential Cleaning Services</h2>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
-            From weekly house cleans to full vacate cleans — eco-friendly
-            products, trained professionals and a satisfaction guarantee.
+            From regular house cleaning in Melbourne CBD, Altona and South
+            East suburbs to full vacate cleans — eco-friendly products,
+            trained professionals and a satisfaction guarantee.
           </p>
         </div>
 

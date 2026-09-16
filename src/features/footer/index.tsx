@@ -25,6 +25,7 @@ const companyLinks = [
 
 const extraSuburbs = [
   'Melbourne CBD',
+  'Altona',
   'Windsor',
   'Balwyn',
   'Kew',
@@ -35,7 +36,6 @@ const extraSuburbs = [
   'Bundoora',
   'Williamstown',
   'Newport',
-  'Altona',
   'Hoppers Crossing',
   'Mornington',
   'Cheltenham',
@@ -44,6 +44,9 @@ const extraSuburbs = [
   'Clayton',
   'Springvale',
   'Cranbourne',
+  'Narre Warren',
+  'Keysborough',
+  'Rowville',
   'Pakenham',
   'Berwick',
   'Officer',
@@ -199,7 +202,7 @@ export const Footer = () => (
           {/* Social */}
           <div className="mt-7">
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61594315407894"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
