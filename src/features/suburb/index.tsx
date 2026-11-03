@@ -112,10 +112,10 @@ export const SuburbPage = () => {
 
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="tel:+61420214143"
+                href="tel:+61481585990"
                 className="inline-flex items-center justify-center gap-2 border-2 border-white/25 text-white font-bold px-7 py-3.5 rounded-2xl hover:border-white/50 hover:bg-white/10 transition-all text-sm"
               >
-                <Phone className="w-4 h-4" /> Call +61 420 214 143
+                <Phone className="w-4 h-4" /> Call 0481 585 990
               </a>
               <Link
                 to="/#contact"
@@ -244,10 +244,10 @@ export const SuburbPage = () => {
                 </div>
                 <div className="bg-white p-6 space-y-3">
                   <a
-                    href="tel:+61420214143"
+                    href="tel:+61481585990"
                     className="flex items-center justify-center gap-2 w-full border-2 border-[#1b3a6b] text-[#1b3a6b] font-bold py-3 rounded-xl text-sm hover:bg-[#1b3a6b] hover:text-white transition-all"
                   >
-                    <Phone className="w-4 h-4" /> +61 420 214 143
+                    <Phone className="w-4 h-4" /> 0481 585 990
                   </a>
                   <Link
                     to="/#contact"
@@ -303,7 +303,7 @@ export const SuburbPage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="tel:+61420214143"
+                href="tel:+61481585990"
                 className="inline-flex items-center justify-center gap-2 border-2 border-[#1b3a6b] text-[#1b3a6b] font-bold px-7 py-3.5 rounded-2xl hover:bg-[#1b3a6b] hover:text-white transition-all text-sm"
               >
                 <Phone className="w-4 h-4" /> Call Now
@@ -378,7 +378,7 @@ function MetaTags({
       name: `PRIMEORA Cleaning Services — ${suburb}`,
       description: desc,
       url: canonical,
-      telephone: '+61420214143',
+      telephone: '+61481585990',
       email: 'info@primeora.com.au',
       image: 'https://primeora.com.au/og-image.jpg?v=20260915',
       areaServed: {
@@ -420,7 +420,10 @@ function MetaTags({
           },
         ],
       },
-      sameAs: ['https://www.facebook.com/profile.php?id=61594315407894'],
+      sameAs: [
+        'https://www.facebook.com/profile.php?id=61594315407894',
+        'https://www.google.com.au/search?kgmid=/g/11zz6f751l&hl=en-AU&q=PrimeOra&shem=epsd1,esd2e,ltae,rimspwouoe,sdpie&shndl=30&source=sh/x/loc/osrp/m5/1&kgs=b2d778e846ea2308&utm_source=epsd1,esd2e,ltae,rimspwouoe,sdpie,sh/x/loc/osrp/m5/1',
+      ],
     };
     let script = document.querySelector(
       'script[data-suburb-ld]',

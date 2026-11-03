@@ -20,8 +20,8 @@ export const GetInTouch = () => (
         {
           icon: <Phone className="w-5 h-5" />,
           label: 'Phone',
-          value: '+61 420 214 143',
-          href: 'tel:+61420214143',
+          value: '0481 585 990',
+          href: 'tel:+61481585990',
         },
         {
           icon: <Mail className="w-5 h-5" />,

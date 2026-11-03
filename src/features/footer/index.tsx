@@ -1,8 +1,11 @@
-import { Facebook, Mail, MapPin, Phone, Sparkles } from 'lucide-react';
+import { Facebook, Globe, Mail, MapPin, Phone, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import logoImg from '../../assets/logo.png';
 import { SUBURBS } from '../../lib/suburbs';
 import { ScrollTo } from '../../lib/utils';
+
+const googleBusinessProfileUrl =
+  'https://www.google.com.au/search?kgmid=/g/11zz6f751l&hl=en-AU&q=PrimeOra&shem=epsd1,esd2e,ltae,rimspwouoe,sdpie&shndl=30&source=sh/x/loc/osrp/m5/1&kgs=b2d778e846ea2308&utm_source=epsd1,esd2e,ltae,rimspwouoe,sdpie,sh/x/loc/osrp/m5/1';
 
 const serviceLinks = [
   'Regular House Cleaning',
@@ -112,10 +115,10 @@ export const Footer = () => (
         </div>
         <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
           <a
-            href="tel:+61420214143"
+            href="tel:+61481585990"
             className="inline-flex items-center justify-center gap-2 border-2 border-white/20 text-white/80 hover:text-white hover:border-white/40 font-semibold text-sm px-6 py-3.5 rounded-2xl transition-all duration-200 backdrop-blur-sm"
           >
-            <Phone className="w-4 h-4" /> +61 420 214 143
+            <Phone className="w-4 h-4" /> 0481 585 990
           </a>
           <button
             onClick={() => ScrollTo('contact')}
@@ -147,7 +150,7 @@ export const Footer = () => (
           {/* Contact pills */}
           <div className="space-y-2.5">
             <a
-              href="tel:+61420214143"
+              href="tel:+61481585990"
               className="flex items-center gap-3 group"
             >
               <span
@@ -161,7 +164,7 @@ export const Footer = () => (
                 <Phone className="w-3.5 h-3.5 text-[#00b5be]" />
               </span>
               <span className="text-sm text-white/60 group-hover:text-white transition-colors">
-                +61 420 214 143
+                0481 585 990
               </span>
             </a>
             <a
@@ -200,7 +203,7 @@ export const Footer = () => (
           </div>
 
           {/* Social */}
-          <div className="mt-7">
+          <div className="mt-7 flex flex-col gap-3">
             <a
               href="https://www.facebook.com/profile.php?id=61594315407894"
               target="_blank"
@@ -212,6 +215,18 @@ export const Footer = () => (
                 <Facebook className="w-4 h-4" />
               </span>
               Follow us on Facebook
+            </a>
+            <a
+              href={googleBusinessProfileUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Google Business Profile"
+              className="inline-flex items-center gap-2.5 text-sm text-white/50 hover:text-white transition-all duration-200 group"
+            >
+              <span className="w-9 h-9 rounded-xl flex items-center justify-center border border-white/10 group-hover:border-[#00b5be]/50 group-hover:bg-[#00b5be]/10 transition-all duration-200">
+                <Globe className="w-4 h-4" />
+              </span>
+              View our Google Business Profile
             </a>
           </div>
         </div>

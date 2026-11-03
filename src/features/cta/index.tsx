@@ -38,10 +38,10 @@ export const CTAStrip = ({
       </div>
       <div className="flex flex-wrap gap-3 flex-shrink-0">
         <a
-          href="tel:+61420214143"
+          href="tel:+61481585990"
           className="inline-flex items-center gap-2 border-2 border-white/30 text-white font-bold text-sm px-6 py-3 rounded-xl hover:bg-white/10 hover:border-white/50 transition-all duration-200"
         >
-          <Phone className="w-4 h-4" /> +61 420 214 143
+          <Phone className="w-4 h-4" /> 0481 585 990
         </a>
         <button
           onClick={() => ScrollTo('contact')}

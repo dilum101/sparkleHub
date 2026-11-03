@@ -46,10 +46,10 @@ export const NavBar = () => {
           </span>
           <div className="flex items-center gap-6">
             <a
-              href="tel:+61420214143"
+              href="tel:+61481585990"
               className="flex items-center gap-1.5 text-white/80 hover:text-[#00b5be] transition-colors font-medium"
             >
-              <Phone className="w-3 h-3" /> +61 420 214 143
+              <Phone className="w-3 h-3" /> 0481 585 990
             </a>
             <button
               onClick={() => ScrollTo('contact')}
@@ -196,14 +196,14 @@ export const NavBar = () => {
                 }}
               >
                 <a
-                  href="tel:+61420214143"
+                  href="tel:+61481585990"
                   className={`flex items-center justify-center gap-2 w-full py-3 rounded-xl border-2 font-semibold text-sm transition-all ${
                     scrolled
                       ? 'border-white/20 text-white/70 hover:border-[#00b5be] hover:text-[#00b5be]'
                       : 'border-gray-200 text-gray-600 hover:border-[#00b5be] hover:text-[#00b5be]'
                   }`}
                 >
-                  <Phone className="w-4 h-4" /> +61 420 214 143
+                  <Phone className="w-4 h-4" /> 0481 585 990
                 </a>
                 <button
                   onClick={() => {

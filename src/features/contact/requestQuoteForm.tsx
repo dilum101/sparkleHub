@@ -102,7 +102,7 @@ export const RequestQuoteForm = ({}: {}) => {
       setStatus("success");
     } catch (err: unknown) {
       console.error("EmailJS error:", err);
-      setSendErr("Something went wrong sending your enquiry. Please call us on +61 420 214 143.");
+      setSendErr("Something went wrong sending your enquiry. Please call us on 0481 585 990.");
       setStatus("error");
     }
   };

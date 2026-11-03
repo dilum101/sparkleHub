@@ -176,7 +176,7 @@ export const Hero = ({}: {}) => {
                 Get a Free Quote <ArrowRight className="w-5 h-5" />
               </button>
               <a
-                href="tel:+61420214143"
+                href="tel:+61481585990"
                 className="flex items-center gap-2.5 bg-white text-[#1b3a6b] font-bold text-base px-8 py-4 rounded-lg hover:bg-[#e0f7f8] hover:text-[#00b5be] transition-all duration-300 shadow-lg"
               >
                 <Phone className="w-5 h-5" />

@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: "How do I book and how quickly will I get a quote?",
-    a: "Fill in our online quote form or call us directly on +61 420 214 143. We'll ask a few quick questions about your property and provide a clear, upfront price — usually within 1–2 hours. Booking takes just minutes once you're happy with the quote.",
+    a: "Fill in our online quote form or call us directly on 0481 585 990. We'll ask a few quick questions about your property and provide a clear, upfront price — usually within 1–2 hours. Booking takes just minutes once you're happy with the quote.",
   },
   {
     q: "Are your cleaners police-checked and insured?",
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "Can I book a same-day or last-minute clean?",
-    a: "We do our best to accommodate short-notice and same-day bookings subject to availability. Call us as early as possible on +61 420 214 143 and we'll confirm the earliest slot we can offer.",
+    a: "We do our best to accommodate short-notice and same-day bookings subject to availability. Call us as early as possible on 0481 585 990 and we'll confirm the earliest slot we can offer.",
   },
   {
     q: "Which Melbourne suburbs do you service?",
@@ -76,7 +76,7 @@ export const FAQ = ({}: {}) => {
             </p>
             <div className="space-y-4">
               <a
-                href="tel:+61420214143"
+                href="tel:+61481585990"
                 className="flex items-center gap-3 bg-white border border-gray-200 hover:border-[#00b5be] rounded-xl p-4 group transition-all duration-300"
               >
                 <div className="w-11 h-11 rounded-xl bg-[#e0f7f8] text-[#00b5be] flex items-center justify-center group-hover:bg-[#00b5be] group-hover:text-white transition-all">
@@ -84,7 +84,7 @@ export const FAQ = ({}: {}) => {
                 </div>
                 <div>
                   <div className="text-xs font-bold text-gray-400 uppercase tracking-wide">Call Us Directly</div>
-                  <div className="font-bold text-[#1b3a6b]">+61 420 214 143</div>
+                  <div className="font-bold text-[#1b3a6b]">0481 585 990</div>
                 </div>
               </a>
               <button
