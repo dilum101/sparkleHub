@@ -4,39 +4,18 @@ import { ScrollTo } from "../../lib/utils";
 
 const testimonials = [
   {
-    name: "Sarah M.", location: "Fitzroy, VIC", rating: 5,
-    text: "PRIMEORA did our end-of-lease clean and we got our full bond back without any issues. The property looked better than when we first moved in! The team was punctual, thorough and very professional. I was honestly blown away by how meticulous they were — every corner, every surface, even the inside of the oven. Highly recommend to anyone moving out.",
-    highlight: "Got full bond back with zero issues",
-    loved: ["On time and professional", "Oven & appliances spotless", "Real estate agent impressed", "Full bond returned"],
-    service: "Vacate Cleaning", initials: "SM", propertyType: "2-bedroom apartment",
+    name: "Renter", location: "Moving out", rating: 5,
+    text: "Couldn’t be more happier with the end of lease clean. Excellent communication, was there on time, and the cleaners were really kind, polite and professional. The house was thoroughly cleaned and spotless. Would use again in the future. Thank you Primeora! :)",
+    highlight: "Amazing end of lease clean and excellent communication",
+    loved: ["On time and professional", "Spotless finish", "Great communication", "Would book again"],
+    service: "Vacate Cleaning", initials: "R", propertyType: "End-of-lease client",
   },
   {
-    name: "James T.", location: "Richmond, VIC", rating: 5,
-    text: "I've been booking fortnightly house cleans and couldn't be happier. Always on time, always thorough, and the team is so friendly and easy to deal with. They remember exactly how I like things done and are super reliable. Coming home to a properly clean house every fortnight is honestly one of the best things I've done for my wellbeing.",
-    highlight: "Consistent, reliable fortnightly cleans",
-    loved: ["Always punctual", "Remembers my preferences", "Incredibly thorough", "Friendly & professional team"],
-    service: "Regular House Cleaning", initials: "JT", propertyType: "3-bedroom house",
-  },
-  {
-    name: "Emily R.", location: "Brunswick, VIC", rating: 5,
-    text: "Booked a deep clean after moving into a new rental that hadn't been properly cleaned. They went completely above and beyond — inside every cupboard, behind the appliances, the grout between the bathroom tiles. I genuinely didn't think the place could look that good. The transformation was incredible and the price was very reasonable for the amount of work they put in.",
-    highlight: "Transformed a neglected rental into a spotless home",
-    loved: ["Inside every cupboard", "Grout & tiles scrubbed", "Behind all appliances", "Reasonable pricing"],
-    service: "Deep Cleaning", initials: "ER", propertyType: "2-bedroom rental",
-  },
-  {
-    name: "David & Lisa W.", location: "Collingwood, VIC", rating: 5,
-    text: "We manage a few rental properties and use PRIMEORA between every tenancy. They are consistently reliable, affordable and the properties always come up absolutely immaculate. The real estate agents are always impressed by the standard of cleanliness. Turnaround time is fast which is crucial for us, and the team always communicates well. We wouldn't use anyone else.",
-    highlight: "Our go-to between every tenancy",
-    loved: ["Fast turnaround time", "Great communication", "Real estate approved standard", "Consistent quality every time"],
-    service: "Vacate Cleaning", initials: "DW", propertyType: "Multiple rental properties",
-  },
-  {
-    name: "Priya K.", location: "St Kilda, VIC", rating: 5,
-    text: "I called PRIMEORA for a last-minute clean before family arrived and was amazed they could fit me in the same day. The team arrived right on time, were incredibly thorough and left every room spotless in just a few hours. I was almost embarrassed by how much better the house looked! Flexible, professional, great value — I've already booked them again for a regular clean.",
-    highlight: "Same-day booking, amazing result",
-    loved: ["Same-day availability", "Arrived right on time", "Every room spotless", "Already rebooked"],
-    service: "House Cleaning", initials: "PK", propertyType: "3-bedroom house",
+    name: "Homeowner", location: "One-off clean", rating: 5,
+    text: "Very satisfied with the professionalism and quality of the clean. The service was reliable and the result looked excellent.",
+    highlight: "Professional, punctual and reliable service",
+    loved: ["Professional", "Reliable service", "Excellent result", "Great experience"],
+    service: "House Cleaning", initials: "H", propertyType: "Homeowner",
   },
 ];
 

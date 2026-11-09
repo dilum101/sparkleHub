@@ -149,7 +149,6 @@ export const Pricing = () => {
                     <span className="text-5xl font-extrabold text-[#1b3a6b] tracking-tight">
                       {p.from}
                     </span>
-                    <span className="text-gray-400 text-sm pb-2">+ GST</span>
                   </div>
                 </div>
 

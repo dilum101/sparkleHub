@@ -6,8 +6,6 @@ import before1 from "../../assets/ourwork/opt/before1.jpg";
 import after1  from "../../assets/ourwork/opt/after1.jpg";
 import before2 from "../../assets/ourwork/opt/before2.jpg";
 import after2  from "../../assets/ourwork/opt/after2.jpg";
-import before3 from "../../assets/ourwork/opt/before3.jpg";
-import after3  from "../../assets/ourwork/opt/after3.jpg";
 import before4 from "../../assets/ourwork/opt/before4.jpg";
 import after4  from "../../assets/ourwork/opt/after4.jpg";
 import before5 from "../../assets/ourwork/opt/before5.jpg";
@@ -18,7 +16,6 @@ import after6  from "../../assets/ourwork/opt/after6.jpg";
 const pairs = [
   { before: before1, after: after1, label: "Kitchen Deep Clean" },
   { before: before2, after: after2, label: "Bathroom Detail" },
-  { before: before3, after: after3, label: "Vacate Clean" },
   { before: before4, after: after4, label: "Living Area" },
   { before: before5, after: after5, label: "Deep Clean" },
   { before: before6, after: after6, label: "After Party Clean" },
